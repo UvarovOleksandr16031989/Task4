@@ -1,0 +1,181 @@
+.header_product
+  padding: 35px 0 0 0
+  &__title
+    @include font_roboto_condensed(700,60px,#ffd50c)
+    text-transform: uppercase
+    background-image: linear-gradient(to right, #f0e394 0%, #b49b52 100%)
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    display: table
+  &__percent_title
+    max-width: 280px
+
+  &__about_title
+    @include font_roboto(500,22px,#fff)
+
+  &__box
+    padding: 28px 0 0 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    position: relative
+  &__about
+    flex-shrink: 0
+
+  &__ellipse
+    display: inline-block
+    width: 24px
+    line-height: 24px
+    text-align: center
+    vertical-align: middle
+    border: 1px solid #b67a52
+    border-radius: 30px
+    background-image: linear-gradient(-225deg, #fc481a 0%, #ca3a15 100%)
+
+  &__about_content
+    @include font_pt_sans(400,16px,#fff)
+
+  &__inner
+    padding: 14px 0 0 0
+
+  &__product
+    padding: 24px 0 0 0
+    position: absolute
+
+
+  &__percent_content
+      @include font_pt_sans(400,16px,#fff)
+
+  &__percent
+    align-items: flex-end
+    display: flex
+    text-align: center
+
+
+
+  &__item
+    display: inline-block
+    box-shadow: 0 2px 3px rgba(27, 27, 27, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.15)
+    border: 1px solid rgba(255, 255, 255, 0.5)
+    background-color: #ffffff
+    @include font_pt_sans(400,50px,#000)
+    border-radius: 5px
+
+  &__item--opacity
+    opacity: 0.7
+
+  &__total_content
+    @include font_pt_sans(400,19px,#fff)
+
+
+  &__total
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    flex-wrap: nowrap
+
+  &__form_title_box
+    background: url("../images/pic/background/form_bg .png") center no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    padding: 25px 9px 29px 9px
+    background-position-y: - 10px
+
+  &__price_form--opacity
+    text-decoration: line-through
+
+  &__title_form
+    @include font_pt_sans(400,15px,#fff)
+    text-align: right
+
+  &__price_form
+    @include font_pt_sans(400,38px,#fff)
+    display: inline-block
+
+  &__currency
+    @include font_pt_sans(400,24px,#fff)
+    word-spacing: -5px
+  &__form
+    overflow: hidden
+    margin: 31px 0 0 0
+    background: #fff
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+    padding: 0 0 24px 0
+    border-radius: 5px
+    max-width: 290px
+
+  &__title_form--opacity
+    opacity: 0.3
+    text-align: left
+
+  &__name,
+  &__phone
+    width: 240px
+    height: 55px
+    border-radius: 5px
+    border: 1px solid #e1e1e1
+    background-color: #f6f6f6
+    margin-top: 15px
+    padding-left: 15px
+    @include font_open(400,14px,#929292)
+  &::placeholder
+    @include font_open(400,14px,#929292)
+
+  &__button_item
+    background-color: #b13412
+    width: 51px
+    line-height: 60px
+    display: inline-block
+    position: absolute
+    left: 0
+    top: 0
+    border-bottom-left-radius: 5px
+    border-top-left-radius: 5px
+    text-align: center
+
+  &__button
+    width: 255px
+    height: 60px
+    box-shadow: 3px 4px 25px rgba(250, 74, 27, 0.35)
+    border-radius: 5px
+    background-image: linear-gradient(to top, #d73f17 0%, #fa4a1b 100%)
+    position: relative
+    @include font_pt_sans(400,22px,#fff)
+    text-transform: uppercase
+    text-align: right
+    padding-right: 12px
+    -webkit-animation: 1s now infinite linear
+    margin: 25px 0 27px 0
+
+  &__protection
+    display: flex
+    flex-direction: row
+    align-items: center
+    @include font_pt_sans(400,14px,#000)
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes now
+  0%
+    color: #ffffff
+  50%
+      color: red
+  100%
+    color: #ffffff
+
+
+
+
