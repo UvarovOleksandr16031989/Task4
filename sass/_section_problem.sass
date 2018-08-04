@@ -1,0 +1,60 @@
+.section_problem
+  text-align: center
+  padding: 36px 0 0px 0
+  background: url("../images/pic/background/problem_bg.png")center no-repeat
+
+  &__title
+    text-transform: uppercase
+    @include font_narrow(700,48px,#fff)
+
+  &__title--orange
+    color: #fc481a
+
+  &__sub_title
+    @include font_pt_sans(400,22px,#fff)
+    line-height: 52px
+
+  &__question_box
+    border-radius: 5px
+    background: #fff
+    padding: 31px 0 50px 0
+    max-width: 641px
+    margin: 0 auto
+
+  &__question_item
+    width: 60px
+    line-height: 60px
+    background: rgba(#000, .1)
+    text-align: center
+    display: inline-block
+    border-radius: 50px
+    @include font_pt_sans(700,30px,#000)
+
+  &__question
+    @include font_pt_sans(700,24px,#000)
+
+  &__answer
+    display: inline-block
+    width: 250px
+    line-height: 80px
+    border-radius: 10px
+    background:  #fc481a
+    position: relative
+    overflow: hidden
+    text-transform: uppercase
+    @include font_pt_sans(700,24px,#fff)
+    &:after
+      content: ''
+      width: 550px
+      height: 500px
+      background-color: rgba(255, 255, 255, 0.15)
+      position: absolute
+      border-radius: 500px
+      left: -149px
+      top: -457px
+    &:hover
+      box-shadow: 0 3px 3px #fc481a
+
+  &__answer_box
+    padding-top: 40px
+

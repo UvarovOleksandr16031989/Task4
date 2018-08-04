@@ -40,8 +40,14 @@ button:focus
   font-size: $size
   color: $color
 
+@mixin font_narrow($weight,$size,$color)
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: $weight
+  font-size: $size
+  color: $color
+
 @mixin font_open($weight,$size,$color)
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif
   font-weight: $weight
   font-size: $size
   color: $color

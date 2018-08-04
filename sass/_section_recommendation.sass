@@ -1,0 +1,31 @@
+.section_recommendation
+  padding: 0px 0 10px 0
+
+  &__title
+    @include  font_narrow( 700,48px,#000)
+    text-transform: uppercase
+    padding: 34px 0 9px 0
+
+  &__inner
+    padding: 0 0 0px 40px
+    border-radius: 10px
+    background: url("../images/pic/background/recommendation_bg.png")no-repeat right
+    background-color: #fff
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    background-size: contain
+
+  &__title--orange
+    color: #fc481a
+
+  &__content
+    padding-top: 25px
+    @include  font_pt_sans(400,16px,#000)
+
+  &__doctor
+    @include font_pt_sans(700,16px,#000)
+    font-style: italic
+
+  &__signature
+    padding-left: 62px

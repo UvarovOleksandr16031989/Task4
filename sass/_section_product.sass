@@ -1,5 +1,6 @@
 .header_product
   padding: 35px 0 0 0
+
   &__title
     @include font_roboto_condensed(700,60px,#ffd50c)
     text-transform: uppercase
@@ -8,6 +9,7 @@
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
     display: table
+
   &__percent_title
     max-width: 280px
 
@@ -20,6 +22,7 @@
     flex-direction: row
     justify-content: space-between
     position: relative
+
   &__about
     flex-shrink: 0
 
@@ -45,34 +48,38 @@
 
 
   &__percent_content
-      @include font_pt_sans(400,16px,#fff)
+      @include font_narrow(400,16px,#fff)
 
   &__percent
     align-items: flex-end
     display: flex
     text-align: center
 
-
+  &__inner_img
+    margin-right: 4px
 
   &__item
     display: inline-block
     box-shadow: 0 2px 3px rgba(27, 27, 27, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.15)
     border: 1px solid rgba(255, 255, 255, 0.5)
     background-color: #ffffff
-    @include font_pt_sans(400,50px,#000)
+    @include font_narrow(700,50px,#000)
     border-radius: 5px
+    width: 46px
+    line-height: 52px
+    text-align: center
 
   &__item--opacity
     opacity: 0.7
 
   &__total_content
-    @include font_pt_sans(400,19px,#fff)
+    @include font_narrow(400,19px,#fff)
 
 
   &__total
     display: flex
     flex-direction: row
-    justify-content: space-evenly
+    justify-content: space-between
     align-items: center
     flex-wrap: nowrap
 
@@ -89,8 +96,8 @@
     text-decoration: line-through
 
   &__title_form
-    @include font_pt_sans(400,15px,#fff)
-    text-align: right
+    @include font_narrow(400,15px,#fff)
+
 
   &__price_form
     @include font_pt_sans(400,38px,#fff)
@@ -113,7 +120,7 @@
 
   &__title_form--opacity
     opacity: 0.3
-    text-align: left
+    padding-right: 25px
 
   &__name,
   &__phone
@@ -147,18 +154,21 @@
     border-radius: 5px
     background-image: linear-gradient(to top, #d73f17 0%, #fa4a1b 100%)
     position: relative
-    @include font_pt_sans(400,22px,#fff)
+    @include font_narrow(400,22px,#fff)
     text-transform: uppercase
     text-align: right
     padding-right: 12px
     -webkit-animation: 1s now infinite linear
     margin: 25px 0 27px 0
+    padding-right: 30px
+    &:hover
+      box-shadow: 0 3px 3px #d73f17
 
   &__protection
     display: flex
     flex-direction: row
     align-items: center
-    @include font_pt_sans(400,14px,#000)
+    @include font_narrow(400,14px,#000)
 
 
 
